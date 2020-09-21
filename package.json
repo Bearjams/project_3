@@ -1,0 +1,33 @@
+{
+  "name": "samepage2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"node server.js\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "a11y-react-emoji": "^1.1.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.16.3",
+    "express-session": "^1.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.16",
+    "morgan": "^1.10.0",
+    "react-native-button": "^3.0.1"
+  }
+}
