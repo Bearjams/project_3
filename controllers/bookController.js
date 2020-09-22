@@ -24,21 +24,26 @@ module.exports = {
     // .catch(err => res.status(422).json(err));
   },
   update: function (req, res) {
+    
     console.log("this is reqbody" + JSON.stringify(req.body))
     db.Book
+      
       .findOne({ bookID: req.body.bookID }, (err, result) => {
-        console.log(result);
+        //console.log(result);
         console.log(result.vote)
         // let voted = result.vote + 1;
+        //if (result.vote){
+        //result.vote = 0;
         db.Book.updateOne({ _id: result._id }, { vote: result.vote + 1 })
           .then(dbModel => {
-            console.log(JSON.stringify(dbModel))
+            //console.log(JSON.stringify(dbModel))
             res.json(dbModel)
           }
           )
+        //}
       }
       )
-    // .catch(err => res.status(422).json(err));
+     //.catch(err => res.status(422).json(err));
   },
   // remove: function (req, res) {
   //   db.Book
