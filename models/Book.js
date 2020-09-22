@@ -12,7 +12,7 @@ const bookSchema = new Schema({
     photoLink:[{type: String}],
     previewLinks:[{type: String}],
     bookDescriptions:[{type: String}],
-    vote:  {type: Number} ,
+    vote:  [{type: Number}] ,
    
 
   
