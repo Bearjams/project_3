@@ -4,6 +4,7 @@ import LoggedIn from "../pages/loggedIn"
 import { Container, Col, Row, Button } from "reactstrap";
 
 function Likes(props) {
+    
     return (
         <button
             className="btn btn mb-2 btn-primary"
