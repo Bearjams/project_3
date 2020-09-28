@@ -12,14 +12,7 @@ class AddSignUpInfo extends Component {
       username: '',
       password: ''
     }
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
 
-  //     username: '',
-  //     password: ''
-  //   }
-  // }
 
   changeHandler = (e) => {
     // console.log("This is e.target.value" + e.target.value)
@@ -41,22 +34,8 @@ class AddSignUpInfo extends Component {
     const userInput = username + password
     API.signUpUser(userInput)
 
-
-    // this.setState({username:e.target.getAttribute("data-username")});
-
-    // this.setState({password:e.target.getAttribute("data-password")});
-    // console.log("this is state " + this.state.username)
-    // axios.post("https://samepage.com/bookclub/post", this.state)
-    // .then (response => {
-    //     console.log(response);
-    // })
-    // .catch (error => {
-    //     console.log(error);
-    // })
   }
-  // handleClickGet = () => {
 
-  // }
   toggleModal() {
     this.setState({
       modalThreeIsOpen: !this.state.modalThreeIsOpen
@@ -64,24 +43,15 @@ class AddSignUpInfo extends Component {
 
     });
   }
-  // handleClickPost =(e) => {
-  //   e.preventDefault();
-
-  //   // API.signUp({
-  //   //   username: e.target.getAttribute("data-user"),
-  //   //   password: e.target.getAttribute("data-password"),
-
-  //   //  })
-  // }
 
   render() {
     const { username, password } = this.state
     console.log("THIS IS STATE OBJECT" + JSON.stringify(this.state))
-    // this.submitHandler()
+
 
     return (
       <div>
-        {/* onSubmit={this.submitHandler} */}
+
         <form >
           <div>
             <h6>Please enter your Username and Password?</h6>
@@ -106,7 +76,7 @@ class AddSignUpInfo extends Component {
           </br>
 
 
-          {/* <Button color="primary" onClick={this.submitHandler} className="btn btn-warning">Sign up</Button> */}
+
         </form>
         <br>
         </br>
