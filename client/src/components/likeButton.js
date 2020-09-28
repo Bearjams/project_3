@@ -34,27 +34,9 @@ class Likes extends React.Component {
       });
 
     }
-    // console.log(this.state.likes)
-    // API.getBookID()
-    // .then(bookWithID => {
-    //   console.log(JSON.stringify(bookWithID))
-    //   // API.voteBook({
-
-    //   //   vote: this.state.likes
-    //   // })
-    // })
-
-  // const  voteWithID = id => {
-
-    
-  //   voteWithID()
-    // API.voteBook()
-    //   .then(res => this.savedBooks())
-    //   .catch(err => console.log(err));
-
     }
 
-  // }
+ 
 
   render() {
 

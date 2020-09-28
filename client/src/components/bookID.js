@@ -8,16 +8,8 @@ function bookID(props) {
         <button
             className="btn btn mb-2 btn-warning"
             data-key={props.bookIDKey}
-       
-           
-
-
-          
-
-        
             onClick={props.handleClick}
-
-
+            
         >bookKey</button>
 
 
