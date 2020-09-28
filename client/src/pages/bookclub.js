@@ -22,71 +22,60 @@ import Tooltip from 'react-bootstrap/Tooltip'
 
 
 const styles = {
-    card: {
-      border: "1px lightgray solid",
-      borderRadius: "5px",
-      maxWidth: "500px",
-      minHeight: "111.600px",
-  
-  
-    },
-  
-    a: {
-      fontFamily: "Pacifico"
-  
-    },
-    img: {
-      maxheight: "40px",
-      maxWidth: "40px",
-      border: "1px lightgray solid",
-    },
-  
-  
-    formation: {
-      textAlign: "center",
-    }
-  
-  
-  };
+  card: {
+    border: "1px lightgray solid",
+    borderRadius: "5px",
+    maxWidth: "500px",
+    minHeight: "111.600px",
+
+
+  },
+
+  a: {
+    fontFamily: "Pacifico"
+
+  },
+  img: {
+    maxheight: "40px",
+    maxWidth: "40px",
+    border: "1px lightgray solid",
+  },
+
+
+  formation: {
+    textAlign: "center",
+  }
+
+
+};
 
 
 
 
 class bookclubs extends Component {
 
-    state = {
-        visible: true,
-        modalIsOpen:false
-     
-      }
-      toggleModal (){
+  state = {
+    visible: true,
+    modalIsOpen: false
+
+  }
+  toggleModal() {
     this.setState({
       modalIsOpen: !this.state.modalIsOpen
-      
-      });
-    }
-    // componentDidMount() {
-  
-    //   this.setState({ data: this.savedBooks(this.state.data) });
-    //   // API.savedBooks()
-    //   //     .then(savedBooks => this.setState({ savedBooks: savedBooks }))
-    //   //     .catch(err => console.error(err));
-    // }
-  
-  
-  
 
-
-render () {
+    });
+  }
+  
+  render() {
     return (
-  
-        <React.Fragment>
+
+      <React.Fragment>
 
 
 
-<nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-<Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
-          <a className="navbar-brand" id="page-title" href="#" style={styles.a}>Same Page</a>
+        <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+          <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <a className="navbar-brand" id="page-title" href="#" style={styles.a}>Same Page</a>
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,9 +105,7 @@ render () {
               </li>
             </ul>
             <ul className="nav navbar-right">
-              {/* <form id="searchbar" onSubmit={handleSubmit}> */}
               <form id="searchbar" >
-                {/* <input id="booksearch" className="form-control mr-sm-2" type="search" onChange={handleChange} */}
                 <input id="booksearch" className="form-control mr-sm-2" type="search"
                   placeholder="Search by Author or Title" aria-label="Search"></input>
                 <button id="book-submit" className="btn btn-warning"
@@ -144,8 +131,6 @@ render () {
             </div>
             <div className="row">
               <div className="col-md-12">
-
-                {/* <h4>Existing book clubs</h4>  */}
               </div>
             </div>
 
@@ -155,21 +140,6 @@ render () {
           <div className="w-100"></div>
           <div className="row">
             <div className="col-md-12">
-              {/* <AddBookClubPost>
-                {createdBookclub.map((bookclub) => {
-                  return (
-                    <h4 >{bookclub.title}</h4>
-                  )
-
-                })}
-
-
-
-
-              </AddBookClubPost> */}
-
-
-
             </div>
 
           </div>
