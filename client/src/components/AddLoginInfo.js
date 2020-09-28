@@ -9,24 +9,14 @@ class AddLogInInfo extends Component {
     {
       visible: true,
       modalIsOpen: false,
-      // isAuthenticated: false,
-      // resData:'',
-      username:'',
-      password:''
+      username: '',
+      password: ''
     }
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-
-  //     username: '',
-  //     password: ''
-  //   }
-  // }
 
   changeHandler = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
- 
+
 
 
   submitHandler = (e) => {
@@ -38,17 +28,11 @@ class AddLogInInfo extends Component {
       username: this.state.username,
       password: this.state.password
 
-     }).then(function (response) {
+    }).then(function (response) {
       console.log(response);
 
-     });
-    // axios.post("https://samepage.com/bookclub/post", this.state)
-    // .then (response => {
-    //     console.log(response);
-    // })
-    // .catch (error => {
-    //     console.log(error);
-    // })
+    });
+
   }
   toggleModalThree() {
     this.setState({

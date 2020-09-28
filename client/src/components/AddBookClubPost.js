@@ -13,17 +13,6 @@ class AddBookClubPost extends Component {
             title: '',
             body: ''
         }
-    // constructor(props) {
-    //     super(props)
-    //     this.state= {
-
-    //         title: '',
-    //         body: '',
-
-    //     }
-
-
-    // }
 
     changeHandler = (e) => {
         this.setState({ [e.target.name]: e.target.value })
@@ -39,13 +28,6 @@ class AddBookClubPost extends Component {
             BookclubBio: this.state.body
 
         })
-        // axios.post("https://samepage.com/bookclub/post", this.state)
-        // .then (response => {
-        //     console.log(response);
-        // })
-        // .catch (error => {
-        //     console.log(error);
-        // })
     }
     toggleModalFour() {
         this.setState({
