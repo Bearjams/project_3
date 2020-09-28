@@ -39,7 +39,7 @@ app.use(session({
 
 app.use(routes);
 
-//const MONGODB_URI = 'mongodb+srv://samcroce:merrychristmas@cluster0.1a5ji.mongodb.net/populatedb?retryWrites=true&w=majority'
+
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/populatedb',
@@ -50,13 +50,6 @@ mongoose.connect(
     useFindAndModify: false
   }
 );
-
-// Connect to the Mongo DB
-// mongoose.connect("mongodb://localhost/populate", { useNewUrlParser: true });
-
-
-
-
 
 
 // Start the server
